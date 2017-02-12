@@ -67,7 +67,7 @@ Run the same script 10 times!
 After a while, you will get what is called a rate limit.
 This prevents people for misusing restful services.
 
-Lets have a look at the API docs here (theysaidso.com)[https://theysaidso.com/api/#qod]
+Lets have a look at the API docs here [theysaidso.com](https://theysaidso.com/api/#qod)
 
 
 ```bash
@@ -82,7 +82,7 @@ ITS JSON :)
 ###JSON
 JavaScript Object Notation is a data-interchange format.
 Its like a dictionary for those familiar with python.
-Learn more at (JSON.org)[http://www.json.org/]
+Learn more at [JSON.org](http://www.json.org/)
 
 ###Lets get even more hands on
 
