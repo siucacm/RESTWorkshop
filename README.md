@@ -18,20 +18,20 @@ This was possible due to many factors one of which is Representational state tra
 REST is an architectural style and is heavily used by web services to communicate.
 Designed by Roy Fielding in his PhD dissertation.
 It has the following constraints:
-⋅⋅* Client-Server architectural style
-⋅⋅* Stateless
-⋅⋅* Cacheable
-⋅⋅* Layered system
-⋅⋅* Uniform interface
-⋅⋅* Code on demand (optional)
+1. Client-Server architectural style
+2. Stateless
+3. Cacheable
+4. Layered system
+5. Uniform interface
+6. Code on demand (optional)
 
 ##HTTP
 HTTP is a protocol.
 Famous methods:
-GET : Request a resource
-HEAD : Request a resource but no body
-PUT/POST : Adding a resource
-DELETE : Delete a resource
+* GET : Request a resource
+* HEAD : Request a resource but no body
+* PUT/POST : Adding a resource
+* DELETE : Delete a resource
 
 There are some arguments between PUT and POST about which one is used for what :)
 
