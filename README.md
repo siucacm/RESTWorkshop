@@ -50,6 +50,40 @@ These are websites but there has to be some sort of an Application program inter
 
 API : Set of protocols,tools and protocols for building software. Java API (Sounds familiar?)
 
+```java
+//The below uses javas api
+System.out.println("Hello World");
+```
 
 ##RESTful API's
-Fetch resources ussing HTTP
+Fetch resources using HTTP
+
+```bash
+#Run script below
+./getquote.sh
+```
+
+Run the same script 10 times!
+After a while, you will get what is called a rate limit.
+This prevents people for misusing restful services.
+
+Lets have a look at the API docs here (theysaidso.com)[https://theysaidso.com/api/#qod]
+
+
+```bash
+#Run script below
+./getip.sh
+```
+
+You just made GET requests to ipify's API requesting a resource.
+You may have noticed all of this objects we get are wrapped in braces etc
+ITS JSON :)
+
+###JSON
+JavaScript Object Notation is a data-interchange format.
+Its like a dictionary for those familiar with python.
+Learn more at (JSON.org)[http://www.json.org/]
+
+###Lets get even more hands on
+
+
