@@ -76,12 +76,10 @@ System.out.println("Hello World");
 ##RESTful API's
 Fetch resources using HTTP
 
-```bash
-#Run script below
-./getquote.sh
-```
+Type in browser:
+http://quotes.rest/qod.json?category=inspire
 
-Run the same script 10 times!
+Keep on fully refreshing the page.
 After a while, you will get what is called a rate limit.
 This prevents people for misusing restful services.
 
