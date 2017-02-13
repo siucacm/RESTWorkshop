@@ -37,6 +37,13 @@ Important methods:
 * PUT/POST : Adding a resource
 * DELETE : Delete a resource
 
+Important status codes:
+*200
+*404
+
+Anything 400 is client side error
+Anything 500 is server side error
+
 There are some arguments between PUT and POST about which one is used for what :)
 
 <hr>
