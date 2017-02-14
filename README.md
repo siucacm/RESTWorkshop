@@ -38,8 +38,9 @@ Important methods:
 * DELETE : Delete a resource
 
 Important status codes:
-*200
-*404
+
+1. 200 = OKay
+2. 404 = Not found
 
 Anything 400 is client side error
 Anything 500 is server side error
@@ -65,7 +66,7 @@ Try any random website and see what you get.
 These are websites but there has to be some sort of an Application program interfaces to used
 
 ##API
-API : Set of protocols,tools and protocols for building software. Java API (Sounds familiar?)
+API : Set of protocols,tools for building software. Java API (Sounds familiar?)
 
 ```java
 //The below uses javas api
