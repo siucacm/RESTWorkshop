@@ -16,7 +16,7 @@ This was possible due to many factors one of which is Representational state tra
 
 <hr>
 
-##REST 
+## REST 
 REST is an architectural style and is heavily used by web services to communicate.
 Designed by Roy Fielding in his PhD dissertation.
 It has the following constraints:
@@ -29,7 +29,7 @@ It has the following constraints:
 
 <hr>
 
-##HTTP
+## HTTP
 HTTP is a protocol.
 Important methods:
 * GET : Request a resource
@@ -65,7 +65,7 @@ Try any random website and see what you get.
 
 These are websites but there has to be some sort of an Application program interfaces to used
 
-##API
+## API
 API : Set of protocols,tools for building software. Java API (Sounds familiar?)
 
 ```java
@@ -74,7 +74,7 @@ System.out.println("Hello World");
 ```
 
 <hr>
-##RESTful API's
+## RESTful API's
 Fetch resources using HTTP
 
 Type in browser:
@@ -96,18 +96,18 @@ You just made GET requests to ipify's API requesting a resource.
 You may have noticed all of this objects we get are wrapped in braces etc
 
 
-####ITS JSON :)
+#### ITS JSON :)
 
 <hr>
 
-###JSON
+### JSON
 JavaScript Object Notation is a data-interchange format.
 Its like a dictionary for those familiar with python.
 Learn more at [JSON.org](http://www.json.org/)
 
 <hr>
 
-###Authentication
+### Authentication
 ```
 GET http://api.wordnik.com/v4/words.json/wordOfTheDay
 ```
@@ -152,7 +152,7 @@ GET http://api.wordnik.com/v4/words.json | python -m json.tool | less
 
 <hr>
 
-###Lets get even more hands on
+### Lets get even more hands on
 
 Lets POST some data!
 Firebase (Backend as a service) allows us to have a database which can be modified through HTTP.
