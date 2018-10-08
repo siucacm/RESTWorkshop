@@ -7,6 +7,7 @@ git clone https://github.com/siucacm/WorkshopFour
 ```
 #### Remember 
 Use **ls** to list the files in the current directory.
+
 Use **cd directory_name** to change your directory.
 
 **What's coming up?**
