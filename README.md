@@ -1,5 +1,5 @@
-# WorkshopFour
-Welcome, we will be talking about RESTful web services and API's in general
+# Introduction to RESTful services
+Welcome, we will be talking about RESTful web services and HTTP protocol.
 
 ```bash
 git clone https://github.com/siucacm/WorkshopFour
@@ -16,10 +16,10 @@ This was possible due to many factors one of which is Representational state tra
 
 <hr>
 
-## REST 
-REST is an architectural style and is heavily used by web services to communicate.
-Designed by Roy Fielding in his PhD dissertation.
-It has the following constraints:
+## REST
+REST stands for Representational State Transfer. It is an architectural style to be used for creating web services. With a RESTful web service, you can exchange information with a computer system on the internet.
+
+REST was designed by Roy Fielding in his PhD dissertation. He designed it with the following architectural style constraints:
 * Client-Server architectural style
 * Stateless
 * Cacheable
@@ -30,22 +30,23 @@ It has the following constraints:
 <hr>
 
 ## HTTP
-HTTP is a protocol.
+HTTP stands for Hypertext Transfer Protocol, it is the base of all data communication for internet. We will be using it to help communicate with RESTful services.
+
+HTTP has many request methods to define the action that will be performed. Four of them are the most important.
 Important methods:
 * GET : Request a resource
 * HEAD : Request a resource but no body
 * PUT/POST : Adding a resource
 * DELETE : Delete a resource
 
-Important status codes:
+There are some arguments between PUT and POST about which one is used for what :)
 
-1. 200 = OKay
+Each HTTP request comes with a status code, we are going to focus on 2 of them: 
+1. 200 = Okay
 2. 404 = Not found
 
-Anything 400 is client side error
-Anything 500 is server side error
-
-There are some arguments between PUT and POST about which one is used for what :)
+Anything in the 400s is client side error
+Anything in the 500s is server side error
 
 <hr>
 
@@ -106,6 +107,50 @@ Its like a dictionary for those familiar with python.
 Learn more at [JSON.org](http://www.json.org/)
 
 <hr>
+
+### Chuck Norris Joke API
+
+To get an understanding on how REST works, we will be looking into the Chuck Norris Joke RESTful API. We can take a look at the API here: https://api.chucknorris.io/.
+
+Let's do the first command listed on the site:
+
+```bash
+GET https://api.chucknorris.io/jokes/random
+```
+
+We see that a JSON object is outputted.
+
+#### Testing in front end web development
+
+The below html script gets a joke from the chuck norris api:
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<button type="submit" onclick="getchucknorrisjoke()" >Chuck Norris Joke</button>
+		<p id="joke"></p>
+		<script>
+			function getchucknorrisjoke(){
+				var getJoke = $.ajax({
+					type: 'GET',
+					url: 'https://api.chucknorris.io/jokes/random?category=food',
+					dataType: 'json',
+					timeout: '3000'
+				});
+				
+				getJoke.done(function(response){
+					$('#joke').html(response.value)
+				});
+			}
+		</script>
+	</body>
+</html>
+```
+
 
 ### Authentication
 ```
