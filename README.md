@@ -75,6 +75,7 @@ System.out.println("Hello World");
 ```
 
 <hr>
+
 ### RESTful API's
 
 Fetch resources using HTTP
