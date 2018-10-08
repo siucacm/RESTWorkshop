@@ -1,18 +1,21 @@
 # Introduction to RESTful services
 Welcome, we will be talking about RESTful web services and HTTP protocol.
 
+In the terminal you can go ahead and clone down the repository.
 ```bash
 git clone https://github.com/siucacm/WorkshopFour
-chmod u+x getjoke.sh
 ```
+#### Remember 
+Use **ls** to list the files in the current directory.
+Use **cd directory_name** to change your directory.
 
-Run it
+**What's coming up?**
 
 ```bash
-./getjoke.sh
+GET http://api.icndb.com/jokes/random
 ```
 
-This was possible due to many factors one of which is Representational state transfer.
+The joke outputted is due to many factors. One of which is Representational state transfer.
 
 <hr>
 
@@ -52,7 +55,6 @@ Anything in the 500s is server side error
 
 ```bash
 GET http://stackoverflow.com/
-
 ```
 
 Now check a summary
@@ -63,8 +65,7 @@ HEAD http://stackoverflow.com/
 
 Try any random website and see what you get.
 
-
-These are websites but there has to be some sort of an Application program interfaces to used
+Websites are good use of the HTTP protocol, but an application program interface (API) is way more useful.
 
 ## API
 API : Set of protocols,tools for building software. Java API (Sounds familiar?)
@@ -73,6 +74,8 @@ API : Set of protocols,tools for building software. Java API (Sounds familiar?)
 //The below uses javas api
 System.out.println("Hello World");
 ```
+
+###### [check out the java API](https://docs.oracle.com/javase/8/docs/api/) 
 
 <hr>
 
@@ -89,10 +92,9 @@ This prevents people for misusing restful services.
 
 Lets have a look at the API docs here [theysaidso.com](https://theysaidso.com/api/#qod)
 
-
+#### Let's make a rest call
 ```bash
-#Run script below
-./getip.sh
+GET https://api.ipify.org?format=json
 ```
 
 You just made GET requests to ipify's API requesting a resource.
