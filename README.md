@@ -124,6 +124,8 @@ GET https://api.chucknorris.io/jokes/random
 
 We see that a JSON object is outputted.
 
+**[Check out other public apis](https://github.com/toddmotto/public-apis)**
+
 #### Testing in front end web development
 
 The below html script gets a joke from the chuck norris api:
