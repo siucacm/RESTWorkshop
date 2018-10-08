@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<button type="submit" onclick="getchucknorrisjoke()" >Chuck Norris Joke</button>
+		<p id="joke"></p>
+		<script>
+			function getchucknorrisjoke(){
+				var getJoke = $.ajax({
+					type: 'GET',
+					url: 'https://api.chucknorris.io/jokes/random?category=food',
+					dataType: 'json',
+					timeout: '3000'
+				});
+				
+				getJoke.done(function(response){
+					$('#joke').html(response.value)
+				});
+			}
+		</script>
+	</body>
+</html>
