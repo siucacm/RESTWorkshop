@@ -234,4 +234,4 @@ java -jar APIGetReq.jar
 
 Want to learn more? Have a look at the source code and tweak it to display any json object.
 
-<hr>
+[Here](https://github.com/public-apis/public-apis) is a list of a bunch of public apis you can use in your projects
